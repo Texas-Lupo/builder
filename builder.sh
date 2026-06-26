@@ -137,7 +137,7 @@ if [ ! -d "$FIRMWARE_DIR" ]; then
         git -C "$FIRMWARE_DIR" checkout "$OPENIPC_FW_REV"
     else
         echo_c 33 "\nDownloading Firmware"
-        git clone --depth=1 https://github.com/OpenIPC/firmware.git "$FIRMWARE_DIR"
+        git clone --depth=1 https://github.com/Texas-Lupo/openipc-firmware.git "$FIRMWARE_DIR"
     fi
     cd "$FIRMWARE_DIR"
 else

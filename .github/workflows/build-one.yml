@@ -40,6 +40,9 @@ jobs:
     name: Firmware (${{inputs.platform}})
     needs: resolve
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout source

@@ -133,11 +133,11 @@ rm -rf openipc
 if [ ! -d "$FIRMWARE_DIR" ]; then
     if [ -n "$OPENIPC_FW_REV" ]; then
         echo_c 33 "\nDownloading Firmware @ ${OPENIPC_FW_REV}"
-        git clone https://github.com/OpenIPC/firmware.git "$FIRMWARE_DIR"
+        git clone https://github.com/Texas-Lupo/firmware.git "$FIRMWARE_DIR"
         git -C "$FIRMWARE_DIR" checkout "$OPENIPC_FW_REV"
     else
         echo_c 33 "\nDownloading Firmware"
-        git clone --depth=1 https://github.com/OpenIPC/firmware.git "$FIRMWARE_DIR"
+        git clone --depth=1 https://github.com/Texas-Lupo/firmware.git "$FIRMWARE_DIR"
     fi
     cd "$FIRMWARE_DIR"
 else
